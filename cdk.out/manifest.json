@@ -39,20 +39,20 @@
               "Bucket.enableAutoDeleteObjects (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1149:45)",
               "new Bucket (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:780:12)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:80:19)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           },
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.a70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529",
-              "id": "a70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529",
+              "path": "asset.0328797564f783eda4856c197c88982a29f371bf471d3d4c8609425aac2ef260",
+              "id": "0328797564f783eda4856c197c88982a29f371bf471d3d4c8609425aac2ef260",
               "packaging": "zip",
-              "sourceHash": "a70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529",
-              "s3BucketParameter": "AssetParametersa70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529S3Bucket9543BCD8",
-              "s3KeyParameter": "AssetParametersa70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529S3VersionKeyF4BB65C5",
-              "artifactHashParameter": "AssetParametersa70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529ArtifactHash605EA01C"
+              "sourceHash": "0328797564f783eda4856c197c88982a29f371bf471d3d4c8609425aac2ef260",
+              "s3BucketParameter": "AssetParameters0328797564f783eda4856c197c88982a29f371bf471d3d4c8609425aac2ef260S3Bucket35B1C44B",
+              "s3KeyParameter": "AssetParameters0328797564f783eda4856c197c88982a29f371bf471d3d4c8609425aac2ef260S3VersionKey36FA6378",
+              "artifactHashParameter": "AssetParameters0328797564f783eda4856c197c88982a29f371bf471d3d4c8609425aac2ef260ArtifactHash85C4F2CA"
             },
             "trace": [
               "ConstructNode.addMetadata (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
@@ -64,7 +64,7 @@
               "AssetCode.bind (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
               "new Function (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/function.ts:331:29)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:146:30)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           },
@@ -91,7 +91,7 @@
               "new LogRetention (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:48:27)",
               "new Function (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/function.ts:432:28)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:146:30)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           },
@@ -118,7 +118,7 @@
               "new AwsCliLayer (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:10:5)",
               "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:100:16)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:410:5)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           },
@@ -146,20 +146,20 @@
               "new SingletonFunction (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:32:32)",
               "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:97:21)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:410:5)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           },
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.b5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655",
-              "id": "b5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655",
+              "path": "asset.b056d6ed29be2392ce2f67558d5ecf0e46b159a6b074d393e4428df231677f01",
+              "id": "b056d6ed29be2392ce2f67558d5ecf0e46b159a6b074d393e4428df231677f01",
               "packaging": "zip",
-              "sourceHash": "b5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655",
-              "s3BucketParameter": "AssetParametersb5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655S3Bucket42E22284",
-              "s3KeyParameter": "AssetParametersb5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655S3VersionKeyF2213B49",
-              "artifactHashParameter": "AssetParametersb5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655ArtifactHash5A4879BC"
+              "sourceHash": "b056d6ed29be2392ce2f67558d5ecf0e46b159a6b074d393e4428df231677f01",
+              "s3BucketParameter": "AssetParametersb056d6ed29be2392ce2f67558d5ecf0e46b159a6b074d393e4428df231677f01S3Bucket1F2187D2",
+              "s3KeyParameter": "AssetParametersb056d6ed29be2392ce2f67558d5ecf0e46b159a6b074d393e4428df231677f01S3VersionKeyD3E524B2",
+              "artifactHashParameter": "AssetParametersb056d6ed29be2392ce2f67558d5ecf0e46b159a6b074d393e4428df231677f01ArtifactHash8D8A4E93"
             },
             "trace": [
               "ConstructNode.addMetadata (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
@@ -173,20 +173,20 @@
               "Array.map (<anonymous>)",
               "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:114:51)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:410:5)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           },
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052",
-              "id": "93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052",
+              "path": "asset.c2ce7eb10f6926deeebaa1db266299f675b921f400d1e49001e630adeb27d7d1",
+              "id": "c2ce7eb10f6926deeebaa1db266299f675b921f400d1e49001e630adeb27d7d1",
               "packaging": "zip",
-              "sourceHash": "93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052",
-              "s3BucketParameter": "AssetParameters93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052S3Bucket51E5E8A7",
-              "s3KeyParameter": "AssetParameters93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052S3VersionKey053094F7",
-              "artifactHashParameter": "AssetParameters93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052ArtifactHashAB5CD291"
+              "sourceHash": "c2ce7eb10f6926deeebaa1db266299f675b921f400d1e49001e630adeb27d7d1",
+              "s3BucketParameter": "AssetParametersc2ce7eb10f6926deeebaa1db266299f675b921f400d1e49001e630adeb27d7d1S3BucketB86B7B34",
+              "s3KeyParameter": "AssetParametersc2ce7eb10f6926deeebaa1db266299f675b921f400d1e49001e630adeb27d7d1S3VersionKey96C2F986",
+              "artifactHashParameter": "AssetParametersc2ce7eb10f6926deeebaa1db266299f675b921f400d1e49001e630adeb27d7d1ArtifactHash0AD9A78D"
             },
             "trace": [
               "ConstructNode.addMetadata (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
@@ -202,20 +202,20 @@
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:429:7",
               "Array.forEach (<anonymous>)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:427:25)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           },
           {
             "type": "aws:cdk:asset",
             "data": {
-              "path": "asset.f780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74",
-              "id": "f780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74",
+              "path": "asset.aee205ff2945d68e5344865b6289ca28df66d1e8b4112f0a307ae820c082ce09",
+              "id": "aee205ff2945d68e5344865b6289ca28df66d1e8b4112f0a307ae820c082ce09",
               "packaging": "zip",
-              "sourceHash": "f780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74",
-              "s3BucketParameter": "AssetParametersf780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74S3Bucket9E678E09",
-              "s3KeyParameter": "AssetParametersf780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74S3VersionKey08169B8B",
-              "artifactHashParameter": "AssetParametersf780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74ArtifactHashF36433B6"
+              "sourceHash": "aee205ff2945d68e5344865b6289ca28df66d1e8b4112f0a307ae820c082ce09",
+              "s3BucketParameter": "AssetParametersaee205ff2945d68e5344865b6289ca28df66d1e8b4112f0a307ae820c082ce09S3Bucket4766A172",
+              "s3KeyParameter": "AssetParametersaee205ff2945d68e5344865b6289ca28df66d1e8b4112f0a307ae820c082ce09S3VersionKeyB956CD2D",
+              "artifactHashParameter": "AssetParametersaee205ff2945d68e5344865b6289ca28df66d1e8b4112f0a307ae820c082ce09ArtifactHash75ADA559"
             },
             "trace": [
               "ConstructNode.addMetadata (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/construct-compat.ts:252:92)",
@@ -231,7 +231,7 @@
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:429:7",
               "Array.forEach (<anonymous>)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:427:25)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -243,7 +243,7 @@
             "trace": [
               "new Bucket (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:713:22)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:80:19)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -259,7 +259,7 @@
               "Bucket.grantPublicAccess (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:328:22)",
               "new Bucket (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:772:12)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:80:19)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -273,7 +273,7 @@
               "Bucket.enableAutoDeleteObjects (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1170:28)",
               "new Bucket (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:780:12)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:80:19)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -285,7 +285,7 @@
             "trace": [
               "new Role (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:132:27)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -302,7 +302,7 @@
               "Bucket.grant (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:383:27)",
               "Bucket.grantReadWrite (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:313:17)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:166:17)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -314,7 +314,7 @@
             "trace": [
               "new Function (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/function.ts:373:35)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:146:30)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -327,7 +327,7 @@
               "new LogRetention (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:53:22)",
               "new Function (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/function.ts:432:28)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:146:30)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -335,12 +335,12 @@
         "/amplifyhosting/amplifyhosting/NextLambda/CurrentVersion/Resource": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "amplifyhostingNextLambdaCurrentVersion108972371b0eeeaa02341b0f6b4abe2b98a97541",
+            "data": "amplifyhostingNextLambdaCurrentVersion10897237b37244eac7f52c7399707510b1b959fe",
             "trace": [
               "new Version (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/lambda-version.ts:126:21)",
               "Function.get currentVersion [as currentVersion] (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/function.ts:148:28)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:167:28)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -354,7 +354,7 @@
               "Object.addAlias (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/util.ts:6:10)",
               "Version.addAlias (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/lambda-version.ts:178:12)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:167:43)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -366,7 +366,7 @@
             "trace": [
               "new CachePolicy (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-cloudfront/lib/cache-policy.ts:86:22)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:231:35)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -378,7 +378,7 @@
             "trace": [
               "new CachePolicy (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-cloudfront/lib/cache-policy.ts:86:22)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:247:33)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -390,7 +390,7 @@
             "trace": [
               "new CachePolicy (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-cloudfront/lib/cache-policy.ts:86:22)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:263:34)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -406,7 +406,7 @@
               "Distribution.addOrigin (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:210:39)",
               "new Distribution (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:148:27)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:299:25)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -425,7 +425,7 @@
               "Array.forEach (<anonymous>)",
               "new Distribution (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:151:49)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:299:25)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -444,7 +444,7 @@
               "Array.forEach (<anonymous>)",
               "new Distribution (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:151:49)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:299:25)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -463,7 +463,7 @@
               "Array.forEach (<anonymous>)",
               "new Distribution (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:151:49)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:299:25)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -477,7 +477,7 @@
               "Distribution.renderLogging (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:301:39)",
               "new Distribution (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:178:23)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:299:25)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -489,7 +489,7 @@
             "trace": [
               "new Distribution (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-cloudfront/lib/distribution.ts:165:26)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:299:25)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -503,7 +503,7 @@
               "new AwsCliLayer (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:10:5)",
               "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:100:16)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:410:5)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -516,7 +516,7 @@
               "new CustomResource (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/custom-resource.ts:36:21)",
               "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:125:5)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:410:5)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -532,7 +532,7 @@
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:429:7",
               "Array.forEach (<anonymous>)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:427:25)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -547,7 +547,7 @@
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:429:7",
               "Array.forEach (<anonymous>)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:427:25)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -563,7 +563,7 @@
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:429:7",
               "Array.forEach (<anonymous>)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:427:25)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -578,7 +578,7 @@
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:429:7",
               "Array.forEach (<anonymous>)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:427:25)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -593,7 +593,7 @@
               "Bucket.enableAutoDeleteObjects (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1149:45)",
               "new Bucket (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:780:12)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:80:19)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -608,7 +608,7 @@
               "Bucket.enableAutoDeleteObjects (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1149:45)",
               "new Bucket (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:780:12)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:80:19)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -629,7 +629,7 @@
               "Bucket.enableAutoDeleteObjects (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1149:45)",
               "new Bucket (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:780:12)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:80:19)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -650,7 +650,7 @@
               "Bucket.enableAutoDeleteObjects (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1149:45)",
               "new Bucket (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:780:12)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:80:19)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -671,15 +671,15 @@
               "Bucket.enableAutoDeleteObjects (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1149:45)",
               "new Bucket (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:780:12)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:80:19)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
         ],
-        "/amplifyhosting/AssetParameters/a70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529/S3Bucket": [
+        "/amplifyhosting/AssetParameters/0328797564f783eda4856c197c88982a29f371bf471d3d4c8609425aac2ef260/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParametersa70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529S3Bucket9543BCD8",
+            "data": "AssetParameters0328797564f783eda4856c197c88982a29f371bf471d3d4c8609425aac2ef260S3Bucket35B1C44B",
             "trace": [
               "new FileAssetParameters (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -690,15 +690,15 @@
               "AssetCode.bind (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
               "new Function (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/function.ts:331:29)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:146:30)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
         ],
-        "/amplifyhosting/AssetParameters/a70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529/S3VersionKey": [
+        "/amplifyhosting/AssetParameters/0328797564f783eda4856c197c88982a29f371bf471d3d4c8609425aac2ef260/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParametersa70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529S3VersionKeyF4BB65C5",
+            "data": "AssetParameters0328797564f783eda4856c197c88982a29f371bf471d3d4c8609425aac2ef260S3VersionKey36FA6378",
             "trace": [
               "new FileAssetParameters (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -709,15 +709,15 @@
               "AssetCode.bind (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
               "new Function (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/function.ts:331:29)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:146:30)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
         ],
-        "/amplifyhosting/AssetParameters/a70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529/ArtifactHash": [
+        "/amplifyhosting/AssetParameters/0328797564f783eda4856c197c88982a29f371bf471d3d4c8609425aac2ef260/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParametersa70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529ArtifactHash605EA01C",
+            "data": "AssetParameters0328797564f783eda4856c197c88982a29f371bf471d3d4c8609425aac2ef260ArtifactHash85C4F2CA",
             "trace": [
               "new FileAssetParameters (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -728,7 +728,7 @@
               "AssetCode.bind (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/code.ts:180:20)",
               "new Function (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/function.ts:331:29)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:146:30)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -749,7 +749,7 @@
               "new LogRetention (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:48:27)",
               "new Function (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/function.ts:432:28)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:146:30)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -770,7 +770,7 @@
               "new LogRetention (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:48:27)",
               "new Function (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/function.ts:432:28)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:146:30)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -791,7 +791,7 @@
               "new LogRetention (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:48:27)",
               "new Function (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/function.ts:432:28)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:146:30)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -812,7 +812,7 @@
               "new AwsCliLayer (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:10:5)",
               "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:100:16)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:410:5)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -833,7 +833,7 @@
               "new AwsCliLayer (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:10:5)",
               "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:100:16)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:410:5)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -854,7 +854,7 @@
               "new AwsCliLayer (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/lambda-layer-awscli/lib/awscli-layer.ts:10:5)",
               "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:100:16)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:410:5)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -876,7 +876,7 @@
               "new SingletonFunction (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:32:32)",
               "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:97:21)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:410:5)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -898,7 +898,7 @@
               "new SingletonFunction (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:32:32)",
               "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:97:21)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:410:5)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -920,15 +920,15 @@
               "new SingletonFunction (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:32:32)",
               "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:97:21)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:410:5)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
         ],
-        "/amplifyhosting/AssetParameters/b5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655/S3Bucket": [
+        "/amplifyhosting/AssetParameters/b056d6ed29be2392ce2f67558d5ecf0e46b159a6b074d393e4428df231677f01/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParametersb5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655S3Bucket42E22284",
+            "data": "AssetParametersb056d6ed29be2392ce2f67558d5ecf0e46b159a6b074d393e4428df231677f01S3Bucket1F2187D2",
             "trace": [
               "new FileAssetParameters (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -941,15 +941,15 @@
               "Array.map (<anonymous>)",
               "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:114:51)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:410:5)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
         ],
-        "/amplifyhosting/AssetParameters/b5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655/S3VersionKey": [
+        "/amplifyhosting/AssetParameters/b056d6ed29be2392ce2f67558d5ecf0e46b159a6b074d393e4428df231677f01/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParametersb5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655S3VersionKeyF2213B49",
+            "data": "AssetParametersb056d6ed29be2392ce2f67558d5ecf0e46b159a6b074d393e4428df231677f01S3VersionKeyD3E524B2",
             "trace": [
               "new FileAssetParameters (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -962,15 +962,15 @@
               "Array.map (<anonymous>)",
               "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:114:51)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:410:5)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
         ],
-        "/amplifyhosting/AssetParameters/b5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655/ArtifactHash": [
+        "/amplifyhosting/AssetParameters/b056d6ed29be2392ce2f67558d5ecf0e46b159a6b074d393e4428df231677f01/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParametersb5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655ArtifactHash5A4879BC",
+            "data": "AssetParametersb056d6ed29be2392ce2f67558d5ecf0e46b159a6b074d393e4428df231677f01ArtifactHash8D8A4E93",
             "trace": [
               "new FileAssetParameters (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -983,84 +983,15 @@
               "Array.map (<anonymous>)",
               "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:114:51)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:410:5)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
         ],
-        "/amplifyhosting/AssetParameters/93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052/S3Bucket": [
+        "/amplifyhosting/AssetParameters/c2ce7eb10f6926deeebaa1db266299f675b921f400d1e49001e630adeb27d7d1/S3Bucket": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParameters93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052S3Bucket51E5E8A7",
-            "trace": [
-              "new FileAssetParameters (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
-              "LegacyStackSynthesizer.doAddFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
-              "LegacyStackSynthesizer.addFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
-              "NextStack.addFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
-              "LegacyStackSynthesizer.addFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
-              "new Asset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
-              "Object.bind (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:58:23)",
-              "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:114:83",
-              "Array.map (<anonymous>)",
-              "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:114:51)",
-              "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:429:7",
-              "Array.forEach (<anonymous>)",
-              "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:427:25)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
-              "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
-            ]
-          }
-        ],
-        "/amplifyhosting/AssetParameters/93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052/S3VersionKey": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "AssetParameters93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052S3VersionKey053094F7",
-            "trace": [
-              "new FileAssetParameters (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
-              "LegacyStackSynthesizer.doAddFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
-              "LegacyStackSynthesizer.addFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
-              "NextStack.addFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
-              "LegacyStackSynthesizer.addFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
-              "new Asset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
-              "Object.bind (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:58:23)",
-              "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:114:83",
-              "Array.map (<anonymous>)",
-              "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:114:51)",
-              "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:429:7",
-              "Array.forEach (<anonymous>)",
-              "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:427:25)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
-              "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
-            ]
-          }
-        ],
-        "/amplifyhosting/AssetParameters/93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052/ArtifactHash": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "AssetParameters93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052ArtifactHashAB5CD291",
-            "trace": [
-              "new FileAssetParameters (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
-              "LegacyStackSynthesizer.doAddFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
-              "LegacyStackSynthesizer.addFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
-              "NextStack.addFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
-              "LegacyStackSynthesizer.addFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
-              "new Asset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
-              "Object.bind (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:58:23)",
-              "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:114:83",
-              "Array.map (<anonymous>)",
-              "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:114:51)",
-              "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:429:7",
-              "Array.forEach (<anonymous>)",
-              "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:427:25)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
-              "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
-            ]
-          }
-        ],
-        "/amplifyhosting/AssetParameters/f780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74/S3Bucket": [
-          {
-            "type": "aws:cdk:logicalId",
-            "data": "AssetParametersf780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74S3Bucket9E678E09",
+            "data": "AssetParametersc2ce7eb10f6926deeebaa1db266299f675b921f400d1e49001e630adeb27d7d1S3BucketB86B7B34",
             "trace": [
               "new FileAssetParameters (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -1075,15 +1006,15 @@
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:429:7",
               "Array.forEach (<anonymous>)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:427:25)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
         ],
-        "/amplifyhosting/AssetParameters/f780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74/S3VersionKey": [
+        "/amplifyhosting/AssetParameters/c2ce7eb10f6926deeebaa1db266299f675b921f400d1e49001e630adeb27d7d1/S3VersionKey": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParametersf780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74S3VersionKey08169B8B",
+            "data": "AssetParametersc2ce7eb10f6926deeebaa1db266299f675b921f400d1e49001e630adeb27d7d1S3VersionKey96C2F986",
             "trace": [
               "new FileAssetParameters (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -1098,15 +1029,15 @@
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:429:7",
               "Array.forEach (<anonymous>)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:427:25)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
         ],
-        "/amplifyhosting/AssetParameters/f780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74/ArtifactHash": [
+        "/amplifyhosting/AssetParameters/c2ce7eb10f6926deeebaa1db266299f675b921f400d1e49001e630adeb27d7d1/ArtifactHash": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "AssetParametersf780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74ArtifactHashF36433B6",
+            "data": "AssetParametersc2ce7eb10f6926deeebaa1db266299f675b921f400d1e49001e630adeb27d7d1ArtifactHash0AD9A78D",
             "trace": [
               "new FileAssetParameters (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
               "LegacyStackSynthesizer.doAddFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
@@ -1121,7 +1052,76 @@
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:429:7",
               "Array.forEach (<anonymous>)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:427:25)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
+              "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
+            ]
+          }
+        ],
+        "/amplifyhosting/AssetParameters/aee205ff2945d68e5344865b6289ca28df66d1e8b4112f0a307ae820c082ce09/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersaee205ff2945d68e5344865b6289ca28df66d1e8b4112f0a307ae820c082ce09S3Bucket4766A172",
+            "trace": [
+              "new FileAssetParameters (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "NextStack.addFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "Object.bind (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:58:23)",
+              "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:114:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:114:51)",
+              "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:429:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:427:25)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
+              "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
+            ]
+          }
+        ],
+        "/amplifyhosting/AssetParameters/aee205ff2945d68e5344865b6289ca28df66d1e8b4112f0a307ae820c082ce09/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersaee205ff2945d68e5344865b6289ca28df66d1e8b4112f0a307ae820c082ce09S3VersionKeyB956CD2D",
+            "trace": [
+              "new FileAssetParameters (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "NextStack.addFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "Object.bind (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:58:23)",
+              "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:114:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:114:51)",
+              "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:429:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:427:25)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
+              "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
+            ]
+          }
+        ],
+        "/amplifyhosting/AssetParameters/aee205ff2945d68e5344865b6289ca28df66d1e8b4112f0a307ae820c082ce09/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParametersaee205ff2945d68e5344865b6289ca28df66d1e8b4112f0a307ae820c082ce09ArtifactHash75ADA559",
+            "trace": [
+              "new FileAssetParameters (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:144:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:66:19)",
+              "NextStack.addFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack.ts:355:29)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:70:25)",
+              "new Asset (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:86:40)",
+              "Object.bind (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/source.ts:58:23)",
+              "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:114:83",
+              "Array.map (<anonymous>)",
+              "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:114:51)",
+              "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:429:7",
+              "Array.forEach (<anonymous>)",
+              "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:427:25)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -1137,7 +1137,7 @@
               "new LogRetention (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:48:27)",
               "new Function (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/function.ts:432:28)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:146:30)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -1154,7 +1154,7 @@
               "new LogRetention (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:48:27)",
               "new Function (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/function.ts:432:28)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:146:30)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -1169,7 +1169,7 @@
               "new LogRetention (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-logs/lib/log-retention.ts:48:27)",
               "new Function (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/function.ts:432:28)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:146:30)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -1185,7 +1185,7 @@
               "new SingletonFunction (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:32:32)",
               "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:97:21)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:410:5)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -1207,7 +1207,7 @@
               "Array.map (<anonymous>)",
               "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:114:51)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:410:5)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -1222,7 +1222,7 @@
               "new SingletonFunction (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-lambda/lib/singleton-lambda.ts:32:32)",
               "new BucketDeployment (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@aws-cdk/aws-s3-deployment/lib/bucket-deployment.ts:97:21)",
               "new NextJSLambdaEdge (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/node_modules/@sls-next/cdk-construct/src/index.ts:410:5)",
-              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:8:9)",
+              "new NextStack (/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/stack.ts:9:9)",
               "/Users/siyuzhang/Downloads/Work/Freelancer/sample/swr-graphql/deploy/bin.ts:11:5"
             ]
           }
@@ -1243,7 +1243,7 @@
               "Object.onceWrapper (events.js:291:20)",
               "process.emit (events.js:203:13)",
               "process.EventEmitter.emit (domain.js:476:20)",
-              "process.emit (/Users/siyuzhang/.npm/_npx/56615/lib/node_modules/ts-node/node_modules/@cspotcode/source-map-support/source-map-support.js:527:35)",
+              "process.emit (/Users/siyuzhang/.npm/_npx/85947/lib/node_modules/ts-node/node_modules/@cspotcode/source-map-support/source-map-support.js:527:35)",
               "process.topLevelDomainCallback (domain.js:131:23)"
             ]
           }
@@ -1264,7 +1264,7 @@
               "Object.onceWrapper (events.js:291:20)",
               "process.emit (events.js:203:13)",
               "process.EventEmitter.emit (domain.js:476:20)",
-              "process.emit (/Users/siyuzhang/.npm/_npx/56615/lib/node_modules/ts-node/node_modules/@cspotcode/source-map-support/source-map-support.js:527:35)",
+              "process.emit (/Users/siyuzhang/.npm/_npx/85947/lib/node_modules/ts-node/node_modules/@cspotcode/source-map-support/source-map-support.js:527:35)",
               "process.topLevelDomainCallback (domain.js:131:23)"
             ]
           }

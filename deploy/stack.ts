@@ -3,6 +3,7 @@ import { NextJSLambdaEdge } from "@sls-next/cdk-construct";
 import { Runtime } from "@aws-cdk/aws-lambda";
 
 export class NextStack extends cdk.Stack {
+  
     constructor(scope: cdk.Construct, id: "amplifyhosting", props: cdk.StackProps ) {
         super(scope, id, props);
         new NextJSLambdaEdge(this, "amplifyhosting", {

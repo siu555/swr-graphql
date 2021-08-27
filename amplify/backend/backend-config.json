@@ -5,5 +5,18 @@
       "providerPlugin": "awscloudformation",
       "type": "manual"
     }
+  },
+  "function": {
+    "swrgraphql56be66d0": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": []
+    },
+    "test": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
   }
 }
