@@ -1,0 +1,1921 @@
+{
+  "Description": "Testing deploying Full Stack Cloud with Next.js, Tailwind, and AWS CDK with SSR",
+  "Resources": {
+    "amplifyhostingPublicAssets298916A5": {
+      "Type": "AWS::S3::Bucket",
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/PublicAssets/Resource"
+      }
+    },
+    "amplifyhostingPublicAssetsPolicy0C727209": {
+      "Type": "AWS::S3::BucketPolicy",
+      "Properties": {
+        "Bucket": {
+          "Ref": "amplifyhostingPublicAssets298916A5"
+        },
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "s3:GetObject",
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": "*"
+              },
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Fn::GetAtt": [
+                        "amplifyhostingPublicAssets298916A5",
+                        "Arn"
+                      ]
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            },
+            {
+              "Action": [
+                "s3:GetBucket*",
+                "s3:List*",
+                "s3:DeleteObject*"
+              ],
+              "Effect": "Allow",
+              "Principal": {
+                "AWS": {
+                  "Fn::GetAtt": [
+                    "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092",
+                    "Arn"
+                  ]
+                }
+              },
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "amplifyhostingPublicAssets298916A5",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "amplifyhostingPublicAssets298916A5",
+                          "Arn"
+                        ]
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "Action": "s3:GetObject",
+              "Effect": "Allow",
+              "Principal": {
+                "CanonicalUser": {
+                  "Fn::GetAtt": [
+                    "amplifyhostingNextJSDistributionOrigin1S3Origin610D6D44",
+                    "S3CanonicalUserId"
+                  ]
+                }
+              },
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Fn::GetAtt": [
+                        "amplifyhostingPublicAssets298916A5",
+                        "Arn"
+                      ]
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            },
+            {
+              "Action": "s3:GetObject",
+              "Effect": "Allow",
+              "Principal": {
+                "CanonicalUser": {
+                  "Fn::GetAtt": [
+                    "amplifyhostingNextJSDistributionOrigin2S3Origin63A12578",
+                    "S3CanonicalUserId"
+                  ]
+                }
+              },
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Fn::GetAtt": [
+                        "amplifyhostingPublicAssets298916A5",
+                        "Arn"
+                      ]
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            },
+            {
+              "Action": "s3:GetObject",
+              "Effect": "Allow",
+              "Principal": {
+                "CanonicalUser": {
+                  "Fn::GetAtt": [
+                    "amplifyhostingNextJSDistributionOrigin3S3Origin0F65A4E8",
+                    "S3CanonicalUserId"
+                  ]
+                }
+              },
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Fn::GetAtt": [
+                        "amplifyhostingPublicAssets298916A5",
+                        "Arn"
+                      ]
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            },
+            {
+              "Action": "s3:GetObject",
+              "Effect": "Allow",
+              "Principal": {
+                "CanonicalUser": {
+                  "Fn::GetAtt": [
+                    "amplifyhostingNextJSDistributionOrigin4S3Origin7EB76680",
+                    "S3CanonicalUserId"
+                  ]
+                }
+              },
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Fn::GetAtt": [
+                        "amplifyhostingPublicAssets298916A5",
+                        "Arn"
+                      ]
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/PublicAssets/Policy/Resource"
+      }
+    },
+    "amplifyhostingPublicAssetsAutoDeleteObjectsCustomResource7DA3B8E9": {
+      "Type": "Custom::S3AutoDeleteObjects",
+      "Properties": {
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F",
+            "Arn"
+          ]
+        },
+        "BucketName": {
+          "Ref": "amplifyhostingPublicAssets298916A5"
+        }
+      },
+      "DependsOn": [
+        "amplifyhostingPublicAssetsPolicy0C727209"
+      ],
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/PublicAssets/AutoDeleteObjectsCustomResource/Default"
+      }
+    },
+    "amplifyhostingNextEdgeLambdaRole75666655": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": [
+                  "lambda.amazonaws.com",
+                  "edgelambda.amazonaws.com"
+                ]
+              }
+            },
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "edgelambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/NextEdgeLambdaRole/Resource"
+      }
+    },
+    "amplifyhostingNextEdgeLambdaRoleDefaultPolicy0C52C474": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:List*",
+                "s3:DeleteObject*",
+                "s3:PutObject*",
+                "s3:Abort*"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "amplifyhostingPublicAssets298916A5",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "amplifyhostingPublicAssets298916A5",
+                          "Arn"
+                        ]
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "amplifyhostingNextEdgeLambdaRoleDefaultPolicy0C52C474",
+        "Roles": [
+          {
+            "Ref": "amplifyhostingNextEdgeLambdaRole75666655"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/NextEdgeLambdaRole/DefaultPolicy/Resource"
+      }
+    },
+    "amplifyhostingNextLambdaA4B584B2": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParametersa70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529S3Bucket9543BCD8"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersa70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529S3VersionKeyF4BB65C5"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersa70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529S3VersionKeyF4BB65C5"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "amplifyhostingNextEdgeLambdaRole75666655",
+            "Arn"
+          ]
+        },
+        "Description": "Default Lambda@Edge for Next CloudFront distribution",
+        "FunctionName": "DefaultLambda-amplifyhosting",
+        "Handler": "index.handler",
+        "MemorySize": 1024,
+        "Runtime": "nodejs12.x",
+        "Timeout": 10
+      },
+      "DependsOn": [
+        "amplifyhostingNextEdgeLambdaRoleDefaultPolicy0C52C474",
+        "amplifyhostingNextEdgeLambdaRole75666655"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/NextLambda/Resource",
+        "aws:asset:path": "asset.a70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529",
+        "aws:asset:property": "Code"
+      }
+    },
+    "amplifyhostingNextLambdaLogRetention3C0BF66D": {
+      "Type": "Custom::LogRetention",
+      "Properties": {
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A",
+            "Arn"
+          ]
+        },
+        "LogGroupName": {
+          "Fn::Join": [
+            "",
+            [
+              "/aws/lambda/",
+              {
+                "Ref": "amplifyhostingNextLambdaA4B584B2"
+              }
+            ]
+          ]
+        },
+        "RetentionInDays": 3
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/NextLambda/LogRetention/Resource"
+      }
+    },
+    "amplifyhostingNextLambdaCurrentVersion108972371b0eeeaa02341b0f6b4abe2b98a97541": {
+      "Type": "AWS::Lambda::Version",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "amplifyhostingNextLambdaA4B584B2"
+        }
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/NextLambda/CurrentVersion/Resource"
+      }
+    },
+    "amplifyhostingNextLambdaCurrentVersionAliasliveE494EE5F": {
+      "Type": "AWS::Lambda::Alias",
+      "Properties": {
+        "FunctionName": {
+          "Ref": "amplifyhostingNextLambdaA4B584B2"
+        },
+        "FunctionVersion": {
+          "Fn::GetAtt": [
+            "amplifyhostingNextLambdaCurrentVersion108972371b0eeeaa02341b0f6b4abe2b98a97541",
+            "Version"
+          ]
+        },
+        "Name": "live"
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/NextLambda/CurrentVersion/Aliaslive/Resource"
+      }
+    },
+    "amplifyhostingNextStaticsCache74A126F6": {
+      "Type": "AWS::CloudFront::CachePolicy",
+      "Properties": {
+        "CachePolicyConfig": {
+          "DefaultTTL": 2592000,
+          "MaxTTL": 2592000,
+          "MinTTL": 2592000,
+          "Name": "StaticsCache-amplifyhosting",
+          "ParametersInCacheKeyAndForwardedToOrigin": {
+            "CookiesConfig": {
+              "CookieBehavior": "none"
+            },
+            "EnableAcceptEncodingBrotli": true,
+            "EnableAcceptEncodingGzip": true,
+            "HeadersConfig": {
+              "HeaderBehavior": "none"
+            },
+            "QueryStringsConfig": {
+              "QueryStringBehavior": "none"
+            }
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/NextStaticsCache/Resource"
+      }
+    },
+    "amplifyhostingNextImageCacheDAD6F39E": {
+      "Type": "AWS::CloudFront::CachePolicy",
+      "Properties": {
+        "CachePolicyConfig": {
+          "DefaultTTL": 86400,
+          "MaxTTL": 31536000,
+          "MinTTL": 0,
+          "Name": "ImageCache-amplifyhosting",
+          "ParametersInCacheKeyAndForwardedToOrigin": {
+            "CookiesConfig": {
+              "CookieBehavior": "none"
+            },
+            "EnableAcceptEncodingBrotli": true,
+            "EnableAcceptEncodingGzip": true,
+            "HeadersConfig": {
+              "HeaderBehavior": "whitelist",
+              "Headers": [
+                "Accept"
+              ]
+            },
+            "QueryStringsConfig": {
+              "QueryStringBehavior": "all"
+            }
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/NextImageCache/Resource"
+      }
+    },
+    "amplifyhostingNextLambdaCache5307B288": {
+      "Type": "AWS::CloudFront::CachePolicy",
+      "Properties": {
+        "CachePolicyConfig": {
+          "DefaultTTL": 0,
+          "MaxTTL": 31536000,
+          "MinTTL": 0,
+          "Name": "LambdaCache-amplifyhosting",
+          "ParametersInCacheKeyAndForwardedToOrigin": {
+            "CookiesConfig": {
+              "CookieBehavior": "all"
+            },
+            "EnableAcceptEncodingBrotli": true,
+            "EnableAcceptEncodingGzip": true,
+            "HeadersConfig": {
+              "HeaderBehavior": "none"
+            },
+            "QueryStringsConfig": {
+              "QueryStringBehavior": "all"
+            }
+          }
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/NextLambdaCache/Resource"
+      }
+    },
+    "amplifyhostingNextJSDistributionOrigin1S3Origin610D6D44": {
+      "Type": "AWS::CloudFront::CloudFrontOriginAccessIdentity",
+      "Properties": {
+        "CloudFrontOriginAccessIdentityConfig": {
+          "Comment": "Identity for amplifyhostingNextJSDistributionOrigin1A45B0CDA"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/NextJSDistribution/Origin1/S3Origin/Resource"
+      }
+    },
+    "amplifyhostingNextJSDistributionOrigin2S3Origin63A12578": {
+      "Type": "AWS::CloudFront::CloudFrontOriginAccessIdentity",
+      "Properties": {
+        "CloudFrontOriginAccessIdentityConfig": {
+          "Comment": "Identity for amplifyhostingNextJSDistributionOrigin265957645"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/NextJSDistribution/Origin2/S3Origin/Resource"
+      }
+    },
+    "amplifyhostingNextJSDistributionOrigin3S3Origin0F65A4E8": {
+      "Type": "AWS::CloudFront::CloudFrontOriginAccessIdentity",
+      "Properties": {
+        "CloudFrontOriginAccessIdentityConfig": {
+          "Comment": "Identity for amplifyhostingNextJSDistributionOrigin39F53F9F9"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/NextJSDistribution/Origin3/S3Origin/Resource"
+      }
+    },
+    "amplifyhostingNextJSDistributionOrigin4S3Origin7EB76680": {
+      "Type": "AWS::CloudFront::CloudFrontOriginAccessIdentity",
+      "Properties": {
+        "CloudFrontOriginAccessIdentityConfig": {
+          "Comment": "Identity for amplifyhostingNextJSDistributionOrigin4FC39774D"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/NextJSDistribution/Origin4/S3Origin/Resource"
+      }
+    },
+    "amplifyhostingNextJSDistributionLoggingBucketCF5E27B3": {
+      "Type": "AWS::S3::Bucket",
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "Retain",
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/NextJSDistribution/LoggingBucket/Resource"
+      }
+    },
+    "amplifyhostingNextJSDistribution56EE7F37": {
+      "Type": "AWS::CloudFront::Distribution",
+      "Properties": {
+        "DistributionConfig": {
+          "CacheBehaviors": [
+            {
+              "AllowedMethods": [
+                "GET",
+                "HEAD",
+                "OPTIONS"
+              ],
+              "CachePolicyId": {
+                "Ref": "amplifyhostingNextLambdaCache5307B288"
+              },
+              "CachedMethods": [
+                "GET",
+                "HEAD",
+                "OPTIONS"
+              ],
+              "Compress": true,
+              "LambdaFunctionAssociations": [
+                {
+                  "EventType": "origin-request",
+                  "IncludeBody": true,
+                  "LambdaFunctionARN": {
+                    "Ref": "amplifyhostingNextLambdaCurrentVersion108972371b0eeeaa02341b0f6b4abe2b98a97541"
+                  }
+                },
+                {
+                  "EventType": "origin-response",
+                  "LambdaFunctionARN": {
+                    "Ref": "amplifyhostingNextLambdaCurrentVersion108972371b0eeeaa02341b0f6b4abe2b98a97541"
+                  }
+                }
+              ],
+              "PathPattern": "_next/data/*",
+              "TargetOriginId": "amplifyhostingNextJSDistributionOrigin265957645",
+              "ViewerProtocolPolicy": "redirect-to-https"
+            },
+            {
+              "AllowedMethods": [
+                "GET",
+                "HEAD",
+                "OPTIONS"
+              ],
+              "CachePolicyId": {
+                "Ref": "amplifyhostingNextStaticsCache74A126F6"
+              },
+              "CachedMethods": [
+                "GET",
+                "HEAD",
+                "OPTIONS"
+              ],
+              "Compress": true,
+              "PathPattern": "_next/*",
+              "TargetOriginId": "amplifyhostingNextJSDistributionOrigin39F53F9F9",
+              "ViewerProtocolPolicy": "redirect-to-https"
+            },
+            {
+              "AllowedMethods": [
+                "GET",
+                "HEAD",
+                "OPTIONS"
+              ],
+              "CachePolicyId": {
+                "Ref": "amplifyhostingNextStaticsCache74A126F6"
+              },
+              "CachedMethods": [
+                "GET",
+                "HEAD",
+                "OPTIONS"
+              ],
+              "Compress": true,
+              "PathPattern": "static/*",
+              "TargetOriginId": "amplifyhostingNextJSDistributionOrigin4FC39774D",
+              "ViewerProtocolPolicy": "redirect-to-https"
+            }
+          ],
+          "DefaultCacheBehavior": {
+            "AllowedMethods": [
+              "GET",
+              "HEAD",
+              "OPTIONS"
+            ],
+            "CachePolicyId": {
+              "Ref": "amplifyhostingNextLambdaCache5307B288"
+            },
+            "CachedMethods": [
+              "GET",
+              "HEAD",
+              "OPTIONS"
+            ],
+            "Compress": true,
+            "LambdaFunctionAssociations": [
+              {
+                "EventType": "origin-request",
+                "IncludeBody": true,
+                "LambdaFunctionARN": {
+                  "Ref": "amplifyhostingNextLambdaCurrentVersion108972371b0eeeaa02341b0f6b4abe2b98a97541"
+                }
+              },
+              {
+                "EventType": "origin-response",
+                "LambdaFunctionARN": {
+                  "Ref": "amplifyhostingNextLambdaCurrentVersion108972371b0eeeaa02341b0f6b4abe2b98a97541"
+                }
+              }
+            ],
+            "TargetOriginId": "amplifyhostingNextJSDistributionOrigin1A45B0CDA",
+            "ViewerProtocolPolicy": "redirect-to-https"
+          },
+          "DefaultRootObject": "",
+          "Enabled": true,
+          "HttpVersion": "http2",
+          "IPV6Enabled": true,
+          "Logging": {
+            "Bucket": {
+              "Fn::GetAtt": [
+                "amplifyhostingNextJSDistributionLoggingBucketCF5E27B3",
+                "RegionalDomainName"
+              ]
+            }
+          },
+          "Origins": [
+            {
+              "DomainName": {
+                "Fn::GetAtt": [
+                  "amplifyhostingPublicAssets298916A5",
+                  "RegionalDomainName"
+                ]
+              },
+              "Id": "amplifyhostingNextJSDistributionOrigin1A45B0CDA",
+              "S3OriginConfig": {
+                "OriginAccessIdentity": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "origin-access-identity/cloudfront/",
+                      {
+                        "Ref": "amplifyhostingNextJSDistributionOrigin1S3Origin610D6D44"
+                      }
+                    ]
+                  ]
+                }
+              }
+            },
+            {
+              "DomainName": {
+                "Fn::GetAtt": [
+                  "amplifyhostingPublicAssets298916A5",
+                  "RegionalDomainName"
+                ]
+              },
+              "Id": "amplifyhostingNextJSDistributionOrigin265957645",
+              "S3OriginConfig": {
+                "OriginAccessIdentity": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "origin-access-identity/cloudfront/",
+                      {
+                        "Ref": "amplifyhostingNextJSDistributionOrigin2S3Origin63A12578"
+                      }
+                    ]
+                  ]
+                }
+              }
+            },
+            {
+              "DomainName": {
+                "Fn::GetAtt": [
+                  "amplifyhostingPublicAssets298916A5",
+                  "RegionalDomainName"
+                ]
+              },
+              "Id": "amplifyhostingNextJSDistributionOrigin39F53F9F9",
+              "S3OriginConfig": {
+                "OriginAccessIdentity": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "origin-access-identity/cloudfront/",
+                      {
+                        "Ref": "amplifyhostingNextJSDistributionOrigin3S3Origin0F65A4E8"
+                      }
+                    ]
+                  ]
+                }
+              }
+            },
+            {
+              "DomainName": {
+                "Fn::GetAtt": [
+                  "amplifyhostingPublicAssets298916A5",
+                  "RegionalDomainName"
+                ]
+              },
+              "Id": "amplifyhostingNextJSDistributionOrigin4FC39774D",
+              "S3OriginConfig": {
+                "OriginAccessIdentity": {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "origin-access-identity/cloudfront/",
+                      {
+                        "Ref": "amplifyhostingNextJSDistributionOrigin4S3Origin7EB76680"
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/NextJSDistribution/Resource"
+      }
+    },
+    "amplifyhostingAssetDeploymentBuildIDAwsCliLayerC91769DC": {
+      "Type": "AWS::Lambda::LayerVersion",
+      "Properties": {
+        "Content": {
+          "S3Bucket": {
+            "Ref": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3BucketAEADE8C7"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Description": "/opt/awscli/aws"
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/AssetDeploymentBuildID/AwsCliLayer/Resource",
+        "aws:asset:path": "asset.e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68.zip",
+        "aws:asset:property": "Content"
+      }
+    },
+    "amplifyhostingAssetDeploymentBuildIDCustomResourceB27B8569": {
+      "Type": "Custom::CDKBucketDeployment",
+      "Properties": {
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+            "Arn"
+          ]
+        },
+        "SourceBucketNames": [
+          {
+            "Ref": "AssetParametersb5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655S3Bucket42E22284"
+          }
+        ],
+        "SourceObjectKeys": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersb5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655S3VersionKeyF2213B49"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersb5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655S3VersionKeyF2213B49"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ],
+        "DestinationBucketName": {
+          "Ref": "amplifyhostingPublicAssets298916A5"
+        },
+        "DestinationBucketKeyPrefix": "/BUILD_ID",
+        "Prune": true,
+        "DistributionId": {
+          "Ref": "amplifyhostingNextJSDistribution56EE7F37"
+        },
+        "DistributionPaths": [
+          "/",
+          "/optimistic-ui",
+          "/subscriptions",
+          "/404",
+          "/_error"
+        ]
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/AssetDeploymentBuildID/CustomResource/Default"
+      }
+    },
+    "amplifyhostingAssetDeploymentstaticPagesAwsCliLayerD1EAF235": {
+      "Type": "AWS::Lambda::LayerVersion",
+      "Properties": {
+        "Content": {
+          "S3Bucket": {
+            "Ref": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3BucketAEADE8C7"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Description": "/opt/awscli/aws"
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/AssetDeployment_staticPages/AwsCliLayer/Resource",
+        "aws:asset:path": "asset.e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68.zip",
+        "aws:asset:property": "Content"
+      }
+    },
+    "amplifyhostingAssetDeploymentstaticPagesCustomResource1EB2EE50": {
+      "Type": "Custom::CDKBucketDeployment",
+      "Properties": {
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+            "Arn"
+          ]
+        },
+        "SourceBucketNames": [
+          {
+            "Ref": "AssetParameters93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052S3Bucket51E5E8A7"
+          }
+        ],
+        "SourceObjectKeys": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052S3VersionKey053094F7"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052S3VersionKey053094F7"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ],
+        "DestinationBucketName": {
+          "Ref": "amplifyhostingPublicAssets298916A5"
+        },
+        "DestinationBucketKeyPrefix": "static-pages",
+        "Prune": true,
+        "SystemMetadata": {
+          "cache-control": "public, max-age=0, s-maxage=2678400, must-revalidate"
+        }
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/AssetDeployment_staticPages/CustomResource/Default"
+      }
+    },
+    "amplifyhostingAssetDeploymentnextStaticAwsCliLayer668F7AB1": {
+      "Type": "AWS::Lambda::LayerVersion",
+      "Properties": {
+        "Content": {
+          "S3Bucket": {
+            "Ref": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3BucketAEADE8C7"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Description": "/opt/awscli/aws"
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/AssetDeployment_nextStatic/AwsCliLayer/Resource",
+        "aws:asset:path": "asset.e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68.zip",
+        "aws:asset:property": "Content"
+      }
+    },
+    "amplifyhostingAssetDeploymentnextStaticCustomResourceC90AA52D": {
+      "Type": "Custom::CDKBucketDeployment",
+      "Properties": {
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536",
+            "Arn"
+          ]
+        },
+        "SourceBucketNames": [
+          {
+            "Ref": "AssetParametersf780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74S3Bucket9E678E09"
+          }
+        ],
+        "SourceObjectKeys": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersf780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74S3VersionKey08169B8B"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersf780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74S3VersionKey08169B8B"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        ],
+        "DestinationBucketName": {
+          "Ref": "amplifyhostingPublicAssets298916A5"
+        },
+        "DestinationBucketKeyPrefix": "_next/static",
+        "Prune": true,
+        "SystemMetadata": {
+          "cache-control": "public, max-age=31536000, immutable"
+        }
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/amplifyhosting/AssetDeployment_nextStatic/CustomResource/Default"
+      }
+    },
+    "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Version": "2012-10-17",
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ]
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Sub": "arn:${AWS::Partition}:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role"
+      }
+    },
+    "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParameters4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392S3BucketBF7A7F3F"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392S3VersionKeyFAF93626"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392S3VersionKeyFAF93626"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Timeout": 900,
+        "MemorySize": 128,
+        "Handler": "__entrypoint__.handler",
+        "Role": {
+          "Fn::GetAtt": [
+            "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092",
+            "Arn"
+          ]
+        },
+        "Runtime": "nodejs12.x",
+        "Description": {
+          "Fn::Join": [
+            "",
+            [
+              "Lambda function for auto-deleting objects in ",
+              {
+                "Ref": "amplifyhostingPublicAssets298916A5"
+              },
+              " S3 bucket."
+            ]
+          ]
+        }
+      },
+      "DependsOn": [
+        "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler"
+      }
+    },
+    "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/Resource"
+      }
+    },
+    "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "logs:PutRetentionPolicy",
+                "logs:DeleteRetentionPolicy"
+              ],
+              "Effect": "Allow",
+              "Resource": "*"
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB",
+        "Roles": [
+          {
+            "Ref": "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/ServiceRole/DefaultPolicy/Resource"
+      }
+    },
+    "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aFD4BFC8A": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Handler": "index.handler",
+        "Runtime": "nodejs14.x",
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParameters67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24S3Bucket4D46ABB5"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24S3VersionKeyB0F28861"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParameters67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24S3VersionKeyB0F28861"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB",
+            "Arn"
+          ]
+        }
+      },
+      "DependsOn": [
+        "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRoleDefaultPolicyADDA7DEB",
+        "LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8aServiceRole9741ECFB"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/LogRetentionaae0aa3c5b4d4f87b02d85b201efdd8a/Resource"
+      }
+    },
+    "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource"
+      }
+    },
+    "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:List*"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":s3:::",
+                      {
+                        "Ref": "AssetParametersb5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655S3Bucket42E22284"
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":s3:::",
+                      {
+                        "Ref": "AssetParametersb5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655S3Bucket42E22284"
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:List*",
+                "s3:DeleteObject*",
+                "s3:PutObject*",
+                "s3:Abort*"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::GetAtt": [
+                    "amplifyhostingPublicAssets298916A5",
+                    "Arn"
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      {
+                        "Fn::GetAtt": [
+                          "amplifyhostingPublicAssets298916A5",
+                          "Arn"
+                        ]
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "Action": [
+                "cloudfront:GetInvalidation",
+                "cloudfront:CreateInvalidation"
+              ],
+              "Effect": "Allow",
+              "Resource": "*"
+            },
+            {
+              "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:List*"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":s3:::",
+                      {
+                        "Ref": "AssetParameters93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052S3Bucket51E5E8A7"
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":s3:::",
+                      {
+                        "Ref": "AssetParameters93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052S3Bucket51E5E8A7"
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            },
+            {
+              "Action": [
+                "s3:GetObject*",
+                "s3:GetBucket*",
+                "s3:List*"
+              ],
+              "Effect": "Allow",
+              "Resource": [
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":s3:::",
+                      {
+                        "Ref": "AssetParametersf780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74S3Bucket9E678E09"
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "Fn::Join": [
+                    "",
+                    [
+                      "arn:",
+                      {
+                        "Ref": "AWS::Partition"
+                      },
+                      ":s3:::",
+                      {
+                        "Ref": "AssetParametersf780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74S3Bucket9E678E09"
+                      },
+                      "/*"
+                    ]
+                  ]
+                }
+              ]
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+        "Roles": [
+          {
+            "Ref": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource"
+      }
+    },
+    "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Ref": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3Bucket55EFA30C"
+          },
+          "S3Key": {
+            "Fn::Join": [
+              "",
+              [
+                {
+                  "Fn::Select": [
+                    0,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3VersionKey60329B70"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "Fn::Select": [
+                    1,
+                    {
+                      "Fn::Split": [
+                        "||",
+                        {
+                          "Ref": "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3VersionKey60329B70"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        },
+        "Role": {
+          "Fn::GetAtt": [
+            "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265",
+            "Arn"
+          ]
+        },
+        "Handler": "index.handler",
+        "Layers": [
+          {
+            "Ref": "amplifyhostingAssetDeploymentBuildIDAwsCliLayerC91769DC"
+          }
+        ],
+        "Runtime": "python3.6",
+        "Timeout": 900
+      },
+      "DependsOn": [
+        "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF",
+        "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource",
+        "aws:asset:path": "asset.c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf",
+        "aws:asset:property": "Code"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Analytics": "v2:deflate64:H4sIAAAAAAAAE3VRwW7CMAz9lt3TsI7LdlspQpqENFSk3UNiukAaT3ECQlH/fUkLBU3ayc923vOzU/KyfOPPT+/iTIVUx1mU6IDHrRfyyGq05F2QntWBPHYNEAYngdV7O+EJVETgE7HVtv1D2Dg8aQUuEzfCiQ78mKQJSnuNtmfZQaQ5j4sgj+Bz94rGsEGj5eVevuZjshAEPdOi47FBMxrM8U4aUc+M6HZK8LgKVubBuTfhL3B0rd1gZbSgXJjAWlzA3drbtKwBj5NGz2heRJFvQXw4CVPwY/DSgfV8dLucCskPtsTX2DbpJHYwIQ0GtXeYnsdayG+4L/GYLnX6G70LA+fT6XT2Skog+lBZyI+ErLXKWv+9eJTpb+cpTN6xSF8ijebVmWqjh7V7ZlEBP9DsVL7wV14+HUjrwoWk1wFvxvgLJ4JDdVYCAAA="
+      },
+      "Metadata": {
+        "aws:cdk:path": "amplifyhosting/CDKMetadata/Default"
+      },
+      "Condition": "CDKMetadataAvailable"
+    }
+  },
+  "Parameters": {
+    "AssetParameters4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392S3BucketBF7A7F3F": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392\""
+    },
+    "AssetParameters4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392S3VersionKeyFAF93626": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392\""
+    },
+    "AssetParameters4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392ArtifactHashE56CD69A": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"4cd61014b71160e8c66fe167e43710d5ba068b80b134e9bd84508cf9238b2392\""
+    },
+    "AssetParametersa70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529S3Bucket9543BCD8": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"a70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529\""
+    },
+    "AssetParametersa70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529S3VersionKeyF4BB65C5": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"a70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529\""
+    },
+    "AssetParametersa70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529ArtifactHash605EA01C": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"a70ab003783471692d106d7a5ece286da3232f1b299d70d21fffb0f59eefb529\""
+    },
+    "AssetParameters67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24S3Bucket4D46ABB5": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24\""
+    },
+    "AssetParameters67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24S3VersionKeyB0F28861": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24\""
+    },
+    "AssetParameters67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24ArtifactHashBA91B77F": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"67b7823b74bc135986aa72f889d6a8da058d0c4a20cbc2dfc6f78995fdd2fc24\""
+    },
+    "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3BucketAEADE8C7": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68\""
+    },
+    "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68S3VersionKeyE415415F": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68\""
+    },
+    "AssetParameterse9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68ArtifactHashD9A515C3": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"e9882ab123687399f934da0d45effe675ecc8ce13b40cb946f3e1d6141fe8d68\""
+    },
+    "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3Bucket55EFA30C": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf\""
+    },
+    "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfS3VersionKey60329B70": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf\""
+    },
+    "AssetParametersc24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cfArtifactHash85F58E48": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"c24b999656e4fe6c609c31bae56a1cf4717a405619c3aa6ba1bc686b8c2c86cf\""
+    },
+    "AssetParametersb5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655S3Bucket42E22284": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"b5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655\""
+    },
+    "AssetParametersb5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655S3VersionKeyF2213B49": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"b5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655\""
+    },
+    "AssetParametersb5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655ArtifactHash5A4879BC": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"b5f8895b06bd9e345537fa9d1c4b7d9d820d6c1bb254288712b3732d80067655\""
+    },
+    "AssetParameters93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052S3Bucket51E5E8A7": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052\""
+    },
+    "AssetParameters93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052S3VersionKey053094F7": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052\""
+    },
+    "AssetParameters93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052ArtifactHashAB5CD291": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"93f3f6cec891717859fda89ca8a0d0c621df11a92225b9a553f90b2d2a464052\""
+    },
+    "AssetParametersf780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74S3Bucket9E678E09": {
+      "Type": "String",
+      "Description": "S3 bucket for asset \"f780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74\""
+    },
+    "AssetParametersf780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74S3VersionKey08169B8B": {
+      "Type": "String",
+      "Description": "S3 key for asset version \"f780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74\""
+    },
+    "AssetParametersf780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74ArtifactHashF36433B6": {
+      "Type": "String",
+      "Description": "Artifact hash for asset \"f780a816c0a58ba0a3204452ba6284ffd8de4d79b237cc75f648f5efc39a7c74\""
+    }
+  },
+  "Conditions": {
+    "CDKMetadataAvailable": {
+      "Fn::Or": [
+        {
+          "Fn::Or": [
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "af-south-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-east-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-northeast-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-northeast-2"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-south-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-southeast-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ap-southeast-2"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "ca-central-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "cn-north-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "cn-northwest-1"
+              ]
+            }
+          ]
+        },
+        {
+          "Fn::Or": [
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-central-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-north-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-south-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-west-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-west-2"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "eu-west-3"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "me-south-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "sa-east-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "us-east-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "us-east-2"
+              ]
+            }
+          ]
+        },
+        {
+          "Fn::Or": [
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "us-west-1"
+              ]
+            },
+            {
+              "Fn::Equals": [
+                {
+                  "Ref": "AWS::Region"
+                },
+                "us-west-2"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

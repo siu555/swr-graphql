@@ -5,12 +5,23 @@
   "license": "MIT",
   "author": "Praveen <praveen@hasura.io>",
   "dependencies": {
+    "@aws-cdk/aws-amplify": "^1.119.0",
+    "@aws-cdk/aws-cloudfront-origins": "^1.119.0",
+    "@aws-cdk/aws-lambda": "^1.119.0",
+    "@aws-cdk/aws-lambda-event-sources": "^1.120.0",
+    "@aws-cdk/aws-route53-targets": "^1.120.0",
+    "@aws-cdk/aws-s3-deployment": "^1.119.0",
+    "@aws-cdk/core": "^1.119.0",
+    "@sls-next/cdk-construct": "^3.2.0",
+    "@sls-next/lambda-at-edge": "^3.2.0",
     "@zeit/next-css": "^1.0.1",
+    "aws-cdk": "^1.119.0",
     "next": "10.0.3",
     "npm-check-unused": "^6.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "swr": "latest",
+    "typescript": "^4.3.5",
     "uuid": "^8.3.2",
     "ws": "^7.4.6"
   },
@@ -18,5 +29,8 @@
     "dev": "next",
     "start": "next start",
     "build": "next build && next export"
+  },
+  "devDependencies": {
+    "@types/node": "^16.7.2"
   }
 }
